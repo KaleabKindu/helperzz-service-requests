@@ -32,7 +32,7 @@ const data = [
 export default function Home() {
   return (
     <div className="flex flex-col gap-10">
-      <h2 className="font-normal text-3xl">Helperzz / My Account</h2>
+      <h2 className="font-normal text-3xl ml-16">Helperzz / My Account</h2>
       <Tab.Group>
         <Tab.List className="flex justify-center gap-10 py-5 bg-[#12937C] bg-opacity-10">
           {data.map(({ label }, index) => (
