@@ -1,5 +1,5 @@
 import Link from "next/link";
-
+import Container from "./Container";
 const home_owner_links = [
   {
     name: "browse categories",
@@ -80,49 +80,51 @@ const helperzz_links = [
 ];
 const Footer = (props) => {
   return (
-    <div className="flex flex-col gap-10 py-10 px-24 bg-[#E8E8E8]">
-      <div className="flex flex-wrap gap-16">
-        <div className="flex flex-col gap-2">
-          <h3 className="font-bold text-xl">HOMEOWNERS</h3>
-          {home_owner_links.map((link, index) => (
-            <Link
-              key={index}
-              href={link.route}
-              className="text-[#000000] opacity-80 uppercase"
-            >
-              {link.name}
-            </Link>
-          ))}
+    <div className=" bg-[#E8E8E8]">
+      <Container className="flex flex-col gap-10 py-10 px-24">
+        <div className="flex flex-wrap gap-16">
+          <div className="flex flex-col gap-2">
+            <h3 className="font-bold text-xl">HOMEOWNERS</h3>
+            {home_owner_links.map((link, index) => (
+              <Link
+                key={index}
+                href={link.route}
+                className="text-[#000000] opacity-80 uppercase"
+              >
+                {link.name}
+              </Link>
+            ))}
+          </div>
+          <div className="flex flex-col gap-2">
+            <h3 className="font-bold text-xl">CONTRACTORS</h3>
+            {contractors_links.map((link, index) => (
+              <Link
+                key={index}
+                href={link.route}
+                className="text-[#000000] opacity-80 uppercase"
+              >
+                {link.name}
+              </Link>
+            ))}
+          </div>
+          <div className="flex flex-col gap-2">
+            <h3 className="font-bold text-xl">HELPERZZ</h3>
+            {helperzz_links.map((link, index) => (
+              <Link
+                key={index}
+                href={link.route}
+                className="text-[#000000] opacity-80 uppercase"
+              >
+                {link.name}
+              </Link>
+            ))}
+          </div>
         </div>
-        <div className="flex flex-col gap-2">
-          <h3 className="font-bold text-xl">CONTRACTORS</h3>
-          {contractors_links.map((link, index) => (
-            <Link
-              key={index}
-              href={link.route}
-              className="text-[#000000] opacity-80 uppercase"
-            >
-              {link.name}
-            </Link>
-          ))}
+        <div className="flex flex-col items-center">
+          <h3 className="font-bold text-2xl">HELPERZZ.COM</h3>
+          <p className="font-normal text-xl">2024</p>
         </div>
-        <div className="flex flex-col gap-2">
-          <h3 className="font-bold text-xl">HELPERZZ</h3>
-          {helperzz_links.map((link, index) => (
-            <Link
-              key={index}
-              href={link.route}
-              className="text-[#000000] opacity-80 uppercase"
-            >
-              {link.name}
-            </Link>
-          ))}
-        </div>
-      </div>
-      <div className="flex flex-col items-center">
-        <h3 className="font-bold text-2xl">HELPERZZ.COM</h3>
-        <p className="font-normal text-xl">2024</p>
-      </div>
+      </Container>
     </div>
   );
 };
