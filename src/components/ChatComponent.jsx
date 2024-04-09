@@ -1,6 +1,7 @@
 import { MdArrowForwardIos } from "react-icons/md";
 import Conversations from "./Conversations";
 import ChatBoard from "./ChatBoard";
+import ServiceRequests from "./ServiceRequests";
 const ChatComponent = (props) => {
   return (
     <div className="flex flex-wrap border rounded-3xl divide-x-2">
@@ -11,7 +12,7 @@ const ChatComponent = (props) => {
           </p>
           <MdArrowForwardIos size={30} />
         </div>
-        <Conversations />
+        <ServiceRequests />
       </div>
       <div className="flex-1 ">
         <ChatBoard />

@@ -3,7 +3,7 @@ import { MdKeyboardArrowDown } from "react-icons/md";
 import ProfileCard from "./ProfileCard";
 import RecentReviews from "./RecentReviews";
 import ChatComponent from "./ChatComponent";
-const ServicesRequests = (props) => {
+const ServicesRequestsTab = (props) => {
   return (
     <div className="flex flex-col items-start gap-10 py-16">
       <Dropdown />
@@ -50,4 +50,4 @@ const Dropdown = (props) => {
   );
 };
 
-export default ServicesRequests;
+export default ServicesRequestsTab;

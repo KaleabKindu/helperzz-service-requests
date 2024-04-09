@@ -16,7 +16,7 @@ const ChatBoard = (props) => {
         </div>
         <Message />
       </div>
-      <div className="flex flex-col justify-center mt-auto w-full h-28 border-t">
+      <div className="flex flex-col justify-center mt-auto w-full h-24 border-t">
         <div className="flex h-12 mx-6 ">
           <input
             type="text"

@@ -2,14 +2,14 @@
 import { Fragment } from "react";
 import { Tab } from "@headlessui/react";
 import classNames from "classnames";
-import ServicesRequests from "@/components/ServicesRequests";
+import ServicesRequestsTab from "@/components/ServicesRequestsTab";
 import Reviews from "@/components/Reviews";
 import Favorites from "@/components/Favorites";
 import Profile from "@/components/Profile";
 const data = [
   {
     label: "My Service Requests",
-    child: ServicesRequests,
+    child: ServicesRequestsTab,
   },
   {
     label: "My Profile",

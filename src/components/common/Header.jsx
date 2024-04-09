@@ -25,7 +25,7 @@ const Header = (props) => {
     <div className="flex justify-between p-3">
       {/* first section */}
       <div className="flex items-center gap-5">
-        <Image src="/logo.svg" width={50} height={50} alt="helperzz logo" />
+        <Image src="/logo.svg" width={110} height={50} alt="helperzz logo" />
         <div className="gap-5 hidden lg:flex">
           {nav_links.map((link, index) => (
             <Link
